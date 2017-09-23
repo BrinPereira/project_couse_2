@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Student App</title>
+</head>
+<body>
+
+    <div>
+        <h2>All Students</h2>
+        <ul id="student" />
+    </div>
+
+    <div>
+        <h2>Search by ID</h2>
+        <input type="text" id="studentId" size="5" />
+        <input type="button" value="Search" onclick="find();" />
+        <p id="product" />
+    </div>
+
+    <div>
+        <h2>add students</h2>
+        <input type="text" id="name" size="5" />
+        <input type="text" id="stdid" size="5" />
+        <input type="button" value="Add" onclick="add();" />
+        <p id="product1" />
+    </div>
+
+    
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+    var uri = 'api/student';
+
+    $(document).ready(function () {
+      // Send an AJAX request
+      $.getJSON(uri)
+          .done(function (data) {
+            // On success, 'data' contains a list of products.
+            $.each(data, function (key, item) {
+              // Add a list item for the product.
+              $('<li>', { text: formatItem(item) }).appendTo($('#student'));
+            });
+          });
+    });
+
+    function formatItem(item) {
+      return item.Id + "    " + item.FirstName + '  ' + item.StandardId;
+    }
+
+    function find() {
+      var id = $('#studentId').val();
+      $.getJSON(uri + '/' + id)
+          .done(function (data) {
+            $('#student').text(formatItem(data));
+          })
+          .fail(function (jqXHR, textStatus, err) {
+            $('#product').text('Error: ' + err);
+          });
+        }
+
+        function add()
+        {
+            var name = $('#name').val();
+            //var category = $('#txtCategory').val();
+            var price = $('#stdid').val();
+            var dataJSON = { FirstName: name, StandardId: price };
+            $.ajax({
+                type: 'POST',
+                url: uri,
+                data: JSON.stringify(dataJSON),
+                contentType: 'application/json; charset=utf-8',
+                //dataType: 'json',
+                success: function () {
+                    window.alert('Student Added Successfully');
+                    window.location.reload(true);
+                }
+            });
+        }
+        
+
+    </script>
+</body>
+</html>
