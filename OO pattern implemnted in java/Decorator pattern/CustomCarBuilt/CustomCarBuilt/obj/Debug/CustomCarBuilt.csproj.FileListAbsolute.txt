@@ -1,0 +1,10 @@
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\bin\Debug\CustomCarBuilt.exe.config
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\bin\Debug\CustomCarBuilt.exe
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\bin\Debug\CustomCarBuilt.pdb
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.CustomCarBuilt.resources
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.Properties.Resources.resources
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.csproj.GenerateResource.Cache
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.exe
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.pdb
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.csprojResolveAssemblyReference.cache
+D:\CSU LONG BEACH\FALL 2016\courses\ooad\Assignment 4\CustomCarBuilt\CustomCarBuilt\obj\Debug\CustomCarBuilt.FinalForm.resources
